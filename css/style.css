@@ -1,0 +1,261 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #460065;
+  font-size: 1.6rem;
+}
+
+.container1 {
+  width: 100%;
+  background-color: #460065;
+}
+
+.container2 {
+  width: 100%;
+  background-color: #0A1424;
+}
+
+.fifa {
+  width: 8.5rem;
+  height: 1.8rem;
+  display: flex;
+  margin-top: 2.5rem;
+  padding-left: 0.8rem;
+}
+@media (max-width: 560px) {
+  .fifa {
+    display: none;
+  }
+}
+
+header {
+  height: auto;
+  max-width: 60rem;
+  margin: auto;
+  margin-top: -5.5rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header .title {
+  max-width: 100%;
+}
+@media (max-width: 560px) {
+  header .title {
+    font-size: 2.5rem;
+  }
+}
+header .world-cup-logo {
+  width: 8.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 560px) {
+  header .world-cup-logo {
+    margin-top: 5rem;
+  }
+}
+header h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+header .researches {
+  position: relative;
+  width: 100%;
+}
+header .researches input {
+  width: 100%;
+  height: 3rem;
+  background-color: #191919;
+  border: none;
+  border-radius: 0.6rem;
+  padding-left: 0.5rem;
+  position: relative;
+}
+header .researches .search {
+  position: absolute;
+  width: 2.5rem;
+  cursor: pointer;
+  left: 51.8rem;
+}
+@media (max-width: 560px) {
+  header .researches .search {
+    left: 33.8rem;
+  }
+}
+
+main {
+  background-color: #0A1424;
+  max-width: 100%;
+  align-items: center;
+}
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: auto;
+  max-width: 50%;
+}
+main ul li {
+  background-color: #191919;
+  padding: 1rem;
+  max-width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+}
+main ul li .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main ul li .header .titleCard {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  opacity: 0.6;
+}
+main ul li .header .team {
+  border: none;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+main ul li .cup {
+  width: 1.5rem;
+}
+main ul li .button {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.3rem;
+}
+main ul li .button button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+main ul:has(li:hover) li:not(:hover) {
+  opacity: 0.6;
+  scale: 0.98;
+}
+
+footer {
+  background-color: #FFF;
+}
+footer .footer_pt1 {
+  display: flex;
+  background-color: #460065;
+  margin-bottom: 0.1rem;
+}
+footer .footer_pt1 .logo_footer {
+  width: 8.5rem;
+  height: 1.8rem;
+  margin: 1.5rem 5rem 1.5rem 1.5rem;
+}
+footer .footer_pt1 .social {
+  display: flex;
+  gap: 2.5rem;
+}
+footer .footer_pt1 .social a .social_icon {
+  width: 2.5rem;
+  padding-top: 1.2rem;
+}
+@media (max-width: 991px) {
+  footer .footer_pt1 .logo_footer {
+    margin: 1.1rem 5rem 1.1rem 1.4rem;
+  }
+  footer .footer_pt1 .social {
+    gap: 2.3rem;
+  }
+  footer .footer_pt1 .social a .social_icon {
+    padding-top: 0.7rem;
+  }
+}
+footer .footer_pt2 {
+  background-color: #460065;
+}
+footer .footer_pt2 p {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  footer .footer_pt2 p {
+    font-size: 1.3rem;
+  }
+}
+footer .footer_pt2 .sponsor {
+  display: flex;
+  gap: 7.5rem;
+  row-gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 7rem;
+}
+footer .footer_pt2 .sponsor .sponsor_icon {
+  padding-top: 3rem;
+  width: 11rem;
+  height: 8.8rem;
+}
+@media (max-width: 991px) {
+  footer .footer_pt2 .sponsor {
+    gap: 5.9rem;
+    row-gap: 1.8rem;
+    padding: 1rem 6.5rem;
+  }
+  footer .footer_pt2 .sponsor .sponsor_icon {
+    padding-top: 2rem;
+    width: 10rem;
+    height: 7.5rem;
+  }
+}
+@media (max-width: 991px) and (max-width: 560px) {
+  footer .footer_pt2 .sponsor .sponsor_icon {
+    width: 9rem;
+    height: 6.5rem;
+  }
+}
+footer .copy {
+  margin-top: 0.1rem;
+  background-color: #460065;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  font-size: 1.4rem;
+}
+footer .copy .e-mail {
+  text-decoration: none;
+  opacity: 0.5;
+}
+footer .copy p {
+  opacity: 0.5;
+}
+@media (max-width: 560px) {
+  footer .copy {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 610px) {
+  main ul {
+    grid-template-columns: 2fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
