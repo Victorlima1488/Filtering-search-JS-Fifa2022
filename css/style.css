@@ -111,6 +111,11 @@ main ul {
   margin: auto;
   max-width: 50%;
 }
+@media (max-width: 560px) {
+  main ul {
+    max-width: 95%;
+  }
+}
 main ul li {
   background-color: #191919;
   padding: 1rem;

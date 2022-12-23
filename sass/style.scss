@@ -105,6 +105,9 @@ main{
         padding: 2rem;
         margin: auto;
         max-width: 50%;
+        @media(max-width: 560px){
+            max-width: 95%;
+        }
         li{
             background-color: #191919;
             padding: 1rem;
