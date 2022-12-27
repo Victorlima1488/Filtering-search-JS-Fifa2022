@@ -110,6 +110,7 @@ main ul {
   padding: 2rem;
   margin: auto;
   max-width: 50%;
+  cursor: pointer;
 }
 @media (max-width: 560px) {
   main ul {
@@ -117,6 +118,7 @@ main ul {
   }
 }
 main ul li {
+  transition: all 0.2s;
   background-color: #191919;
   padding: 1rem;
   max-width: 100%;
@@ -153,10 +155,6 @@ main ul li .button button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-main ul:has(li:hover) li:not(:hover) {
-  opacity: 0.6;
-  scale: 0.98;
 }
 
 footer {

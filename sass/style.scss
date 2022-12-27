@@ -105,10 +105,12 @@ main{
         padding: 2rem;
         margin: auto;
         max-width: 50%;
+        cursor: pointer;
         @media(max-width: 560px){
             max-width: 95%;
         }
         li{
+            transition: all .2s;
             background-color: #191919;
             padding: 1rem;
             max-width: 100%;
@@ -147,10 +149,6 @@ main{
             }
         }
     }
-    ul:has(li:hover) li:not(:hover) {
-        opacity: .6;
-        scale: .98;
-      }
 }
 
 footer{
