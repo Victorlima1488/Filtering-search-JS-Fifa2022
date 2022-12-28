@@ -136,6 +136,9 @@ main{
             } 
             .cup{
                 width: 1.5rem;
+                :hover{
+                    scale: .98;
+                }
             }
             .button{
                 display: flex;

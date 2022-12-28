@@ -146,6 +146,9 @@ main ul li .header .team {
 main ul li .cup {
   width: 1.5rem;
 }
+main ul li .cup :hover {
+  scale: 0.98;
+}
 main ul li .button {
   display: flex;
   align-items: flex-start;
